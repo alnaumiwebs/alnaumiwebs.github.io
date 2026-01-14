@@ -1,0 +1,34 @@
+{
+  "default": {
+    "firstScene": "sala",
+    "sceneFadeDuration": 1000
+  },
+  "scenes": {
+    "sala": {
+      "type": "equirectangular",
+      "panorama": "sala.jpg",
+      "hotSpots": [
+        {
+          "pitch": -5,
+          "yaw": 30,
+          "type": "scene",
+          "text": "Ir a la cocina",
+          "sceneId": "cocina"
+        }
+      ]
+    },
+    "cocina": {
+      "type": "equirectangular",
+      "panorama": "cocina.jpg",
+      "hotSpots": [
+        {
+          "pitch": -3,
+          "yaw": -170,
+          "type": "scene",
+          "text": "Volver a la sala",
+          "sceneId": "sala"
+        }
+      ]
+    }
+  }
+}
